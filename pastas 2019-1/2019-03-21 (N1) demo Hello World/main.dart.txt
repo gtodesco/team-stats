@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+
+void main(){
+	runApp(
+		new Center(
+			child: new Text(
+				'Hello, world!'
+			),
+		),
+	);
+}
+
+/*A maior dificuldade para implementar o “Hello, world!” no Flutter foi instalar as IDE’s, SDK do Android, Pluggin do Flutter e do Dart e subir o emulador. Além disso, a inicialização do mesmo é extremamente pesada e pode não funcionar em computadores com pouca capacidade de hardware.*/ 
