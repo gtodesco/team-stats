@@ -502,10 +502,10 @@
                         <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>org.h2.Driver</driver>
-                        <url>jdbc:h2:file:${project.build.directory}/h2db/db/teamstats</url>
+                        <url>jdbc:h2:file:${project.build.directory}/h2db/db/teamstats_app</url>
                         <defaultSchemaName></defaultSchemaName>
-                        <username>TeamStats</username>
-                        <password></password>
+                        <username>"root"</username>
+                        <password>""root"</password>
                         <referenceUrl>hibernate:spring:br.com.furb.teamstats.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>

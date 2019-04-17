@@ -1,0 +1,32 @@
+entity Pessoa {
+	id Long,
+    nome String,
+    email String,
+    password String,
+    ativConcluidas Integer,
+    pontEntregue Integer    
+}
+
+entity Equipe {
+ 	id Long,
+    nome String,
+    emailScrumMaster String
+}
+
+entity Sprint {
+ 	id Long,
+	numero String,
+	pontPlanejada String,
+	pontConcluidas String,
+	qtdDias String,
+    finalizada Boolean
+}
+
+relationship OneToMany {
+	Equipe{sprints} to Sprint{equipe}
+}
+
+relationship ManyToMany{
+	Equipe{pessoas} to Pessoa{equipes}
+}
+

@@ -1,0 +1,43 @@
+{
+    "name": "Sprint",
+    "fields": [
+        {
+            "fieldName": "numero",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pontPlanejada",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pontConcluidas",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "qtdDias",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "finalizada",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "equipe",
+            "otherEntityRelationshipName": "sprints",
+            "relationshipName": "equipe",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190408220725",
+    "entityTableName": "sprint",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

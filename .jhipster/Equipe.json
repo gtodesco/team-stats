@@ -1,0 +1,38 @@
+{
+    "name": "Equipe",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailScrumMaster",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "sprint",
+            "otherEntityRelationshipName": "equipe",
+            "relationshipName": "sprints"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "pessoa",
+            "otherEntityRelationshipName": "equipes",
+            "relationshipName": "pessoas",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190408220724",
+    "entityTableName": "equipe",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

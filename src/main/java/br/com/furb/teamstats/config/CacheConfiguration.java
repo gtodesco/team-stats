@@ -38,6 +38,13 @@ public class CacheConfiguration {
             cm.createCache(br.com.furb.teamstats.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(br.com.furb.teamstats.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(br.com.furb.teamstats.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(br.com.furb.teamstats.domain.Pessoa.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.furb.teamstats.domain.Pessoa.class.getName() + ".equipes", jcacheConfiguration);
+            cm.createCache(br.com.furb.teamstats.domain.Equipe.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.furb.teamstats.domain.Sprint.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.furb.teamstats.domain.Sprint.class.getName() + ".equipes", jcacheConfiguration);
+            cm.createCache(br.com.furb.teamstats.domain.Equipe.class.getName() + ".sprints", jcacheConfiguration);
+            cm.createCache(br.com.furb.teamstats.domain.Equipe.class.getName() + ".pessoas", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
