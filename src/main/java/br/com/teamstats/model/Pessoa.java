@@ -43,6 +43,9 @@ public class Pessoa{
 	private String password;
 	
 	@Column
+	private boolean scrum_Master;
+	
+	@Column
 	private String ativ_Concluidas;
 	
 	@Column
@@ -108,6 +111,12 @@ public class Pessoa{
 		this.equipe = equipe;
 	}
 
+	public boolean isScrum_Master() {
+		return scrum_Master;
+	}
 
+	public void setScrum_Master(boolean scrum_Master) {
+		this.scrum_Master = scrum_Master;
+	}
 
 }
