@@ -76,4 +76,9 @@ public class ScrumMasterController {
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 	
+	@GetMapping("/scrumMasters/buscar")
+	public ResponseEntity<Optional<ScrumMaster>> buscarScrumMasterPorEmail(@PathParam(value = "email") String email){
+		Optional<ScrumMaster> scrumMaster = scrumMasterService.buscarPorEmail(email);
+		return new ResponseEntity<Optional<ScrumMaster>>(scrumMaster, HttpStatus.OK);
+	}
 }

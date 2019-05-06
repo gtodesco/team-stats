@@ -9,5 +9,6 @@ import br.com.teamstats.model.ScrumMaster;
 
 @Repository
 public interface ScrumMasterRepository extends JpaRepository<ScrumMaster, Long> {
-	
+
+	public Optional<ScrumMaster> findByEmailIgnoreCase(String email);
 }

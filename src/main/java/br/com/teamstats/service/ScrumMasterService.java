@@ -33,4 +33,8 @@ public class ScrumMasterService {
 		return scrumMasterRepository.findAll();
 	}
 	
+	public Optional<ScrumMaster> buscarPorEmail(String email){
+		return scrumMasterRepository.findByEmailIgnoreCase(email);
+	}
+	
 }
